@@ -90,7 +90,7 @@ const Home = () => {
     
     <>
       <div className='w-full h-full'> 
-        <div className=' w-[100vw] h-[100vh] overflow-hidden'>
+        <div className=' w-[98.9vw] h-[100vh] overflow-hidden'>
           <div className='w-[1000%] h-full flex flex-row'>
             <div className='w-[10%] h-full transition-all ' style={{marginLeft: margin}}>
               <img src={Admission} alt="" className='w-full h-full object-cover' />
