@@ -113,34 +113,34 @@ const Home = () => {
           </div>
         </div>
         <div className=' md:grid md:grid-cols-2 md:gap-2 md:pt-3 md:bg-[#EEEA82]'>
-          <div className='w-full md:w-[20rem] md:ml-10 lg:ml-[5rem] xl:w-[30rem] xl:ml-[10rem]'>
-            <Button className='w-full bg-[#D64C4C] text-black text-lg rounded-none' onClick={toggleOpenAnnouncement}>
+          <div className='w-full md:w-[20rem] md:ml-10 lg:ml-[2rem] xl:w-[30rem] xl:ml-[10rem]'>
+            <Button className='w-full bg-[#D64C4C] text-black text-lg rounded-none lg:w-[25rem] xl:ml-[-5rem] xl:w-[40rem] ' onClick={toggleOpenAnnouncement}>
               Announcement
               <span className='ml-10'><FontAwesomeIcon icon={faCaretDown} size='2xl'/></span>
             </Button>
-            <Collapse open={openAnnouncement}>
-              <Card className='bg-[#994545] rounded-none text-white'>
+            <Collapse open={openAnnouncement} className='xl:w-[40rem] xl:ml-[-5rem]'>
+              <Card className='bg-[#994545] rounded-none text-white '>
                 <CardBody>
-                  <Typography className='bg-[#DE7373] text-xs'>PLMAT 2025: New website with modernization look and feature</Typography>
+                  <Typography className='text-xs lg:text-sm'>PLMAT 2025: New website with modernization look and feature</Typography>
                 </CardBody>
               </Card>
             </Collapse>
           </div>
-          <div className='w-full md:w-[20rem] md:ml-10 lg:ml-[5rem] xl:w-[30rem]'>
-            <Button className='w-full bg-[#626FE9] text-black text-lg rounded-none' onClick={toggleOpenAdvisory}>
+          <div className='w-full md:w-[20rem] md:ml-10 lg:ml-[4rem] xl:w-[30rem]'>
+            <Button className='w-full bg-[#626FE9] text-black text-lg rounded-none lg:w-[25rem] xl:w-[40rem] ' onClick={toggleOpenAdvisory}>
               Advisory
               <span className='ml-10'><FontAwesomeIcon icon={faCaretDown} size='2xl'/></span>
             </Button>
-            <Collapse open={openAdvisory}>
+            <Collapse open={openAdvisory} className='xl:w-[40rem]'>
               <Card className='bg-[#7A77ED] rounded-none text-white'>
                 <CardBody>
-                  <Typography className='bg-[#4D73FB] text-xs'>Lorem ipsum dolor sit amet. Id facilis nihil ad porro doloribus et similique optio id molestias unde ab accusantium ipsam quo placeat minima. Non architecto voluptatem aut error corporis sit quidem dolorem!</Typography>
+                  <Typography className='text-xs lg:text-sm'>Lorem ipsum dolor sit amet. Id facilis nihil ad porro doloribus et similique optio id molestias unde ab accusantium ipsam quo placeat minima. Non architecto voluptatem aut error corporis sit quidem dolorem!</Typography>
                 </CardBody>
               </Card>
             </Collapse>
           </div>
         </div>
-        <div className='md:bg-[#EEEA82] md:h-[3rem]'></div>
+        <div className='md:bg-[#EEEA82] md:h-[2rem]'></div>
         <div className='h-[5rem] flex items-center md:h-[5rem] md:justify-center md:gap-5'>
           <img src={logoPLM} alt="" className='w-14' />
           <h1 className=' text-[0.45rem] md:text-[0.7rem] lg:text-[0.8rem] xl:text-[1rem]'>Copyright 1967 - 2022 Pamantasan ng Lungsod ng Maynila, All right Reserved</h1>
