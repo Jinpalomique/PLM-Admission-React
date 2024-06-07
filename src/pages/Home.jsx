@@ -112,8 +112,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className=' md:grid md:grid-cols-2 md:gap-2 md:pt-3 md:bg-[#EEEA82] xl:gap-10'>
-          <div className='w-full md:w-[20rem] md:ml-10 lg:ml-[2rem] xl:w-[30rem] xl:ml-[10rem]'>
+        <div className=' md:grid md:grid-cols-2 md:gap-2 md:pt-3 md:bg-[#EEEA82]'>
+          <div className='w-full md:w-[20rem] md:ml-10 lg:ml-[2rem] xl:w-[30rem] xl:ml-[10rem]  '>
             <Button className='w-full bg-[#D64C4C] text-black text-lg rounded-none lg:w-[25rem] xl:ml-[-5rem] xl:w-[40rem] ' onClick={toggleOpenAnnouncement}>
               Announcement
               <span className='ml-10'><FontAwesomeIcon icon={faCaretDown} size='2xl'/></span>

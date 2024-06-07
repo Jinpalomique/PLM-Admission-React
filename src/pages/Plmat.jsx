@@ -25,24 +25,24 @@ const Plmat = () => {
 
   return (
     <>
-        <div>
+        <div className={`${showApply ? "hidden" : "block"}`}>
             <div>
                 <img src={schoolpic} alt="" className=' opacity-65 xl:w-full'   />
             </div>
             <div className="md:flex md:ml-5 lg:ml-20 xl:ml-[15rem] mt-2">
-                <div className='flex justify-center gap-10 mt-2'>
+                <div className='flex justify-center gap-10 mt-2 md:items-center'>
                     <div>
-                        <Button className='rounded-none bg-[#FD3E3E]' onClick={toggleShowApply}>APPLY</Button>
+                        <Button className='rounded-none bg-[#FD3E3E] md:w-[10rem] md:h-[3rem] xl:text-xl' onClick={toggleShowApply}>APPLY</Button>
                     </div>
                     <div>
-                        <Button className='rounded-none bg-[#034AFF]'>LOGIN</Button>
+                        <Button className='rounded-none bg-[#034AFF] md:w-[10rem] md:h-[3rem] xl:text-xl '>LOGIN</Button>
                     </div>
                 </div>
-                <div className='block text-[0.6rem] text-center mt-4 bg-[#F36060] text-white w-72 m-auto md:w-[27rem]'>
-                    <h1>Reminder: To apply for PLM Admissions, please review the requirements, prepare and gather the required documents. Complete any necessary forms and submit your application by the deadline.</h1>
+                <div className='block text-[0.6rem] text-center mt-4 bg-[#F36060] text-white w-72 m-auto md:w-[35rem]'>
+                    <h1 className=' md:text-base' >Reminder: To apply for PLM Admissions, please review the requirements, prepare and gather the required documents. Complete any necessary forms and submit your application by the deadline.</h1>
                 </div>
             </div>
-            <div className={`${showApply ? "hidden" : "md:flex md:justify-center md:gap-5"}`}>
+            <div className={`${showApply ? "hidden" : "md:flex md:justify-center md:gap-5 md:mt-5"}`}>
                 <div className='bg-[#D9D9D9] mt-3 text-center h-[22rem] md:w-[21rem] lg:w-[30rem] lg:h-[17rem] xl:w-[40rem] xl:h-[15rem]'>
                     <h1 className=' font-medium'>WHO MAY APPLY</h1>
                     <p className='text-sm mt-2 w-[17rem] lg:w-[28rem] xl:w-[38rem] text-center m-auto '>The Pamantasan ng Lungsod ng Maynila (PLM) will start accepting online applications for freshmen students (undergraduate programs) for Academic Year (AY) 2024-2025 beginning on December 1, 2023.For AY 2024-2025, there will be an on-site PLM Admission Test (PLMAT). Minimum health protocols will be observed to ensure the safety of student-applicants. The PLMAT is a 4-hour examination consisting of sub-tests in English, Science, Mathematics, Filipino, and Abstract Reasoning. Passing the PLMAT is one of the requirements for admission to PLM.</p>
@@ -53,15 +53,15 @@ const Plmat = () => {
                     <p className='text-sm w-[16rem] mt-2 m-auto text-justify lg:w-[28rem] xl:w-[38rem]'>2. Senior High School graduate from a DepEd accredited senior high school with a Grade 11 general weighted average (GWA) of 80 or above and has not taken any college or university units or programs during the application period.</p>
                 </div>
             </div>
-            <div className='md:flex md:items-center md:justify-center md:ml-14 lg:ml-6 xl:ml-[-6rem]'>
+            <div className='md:flex md:items-center md:justify-center md:ml-14 md:mt-5 lg:ml-6 xl:ml-[-6rem]'>
                 <div className='mt-2'>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.215549408406!2d120.97398871478896!3d14.586789989811258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca2336770053%3A0x1b731714778d3506!2sPamantasan%20ng%20Lungsod%20ng%20Maynila!5e0!3m2!1sen!2sph!4v1658283044869!5m2!1sen!2sph"  className='w-full lg:w-[25rem] lg:h-[10rem] xl:w-[35rem]'></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.215549408406!2d120.97398871478896!3d14.586789989811258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca2336770053%3A0x1b731714778d3506!2sPamantasan%20ng%20Lungsod%20ng%20Maynila!5e0!3m2!1sen!2sph!4v1658283044869!5m2!1sen!2sph"  className='w-full lg:w-[25rem] lg:h-[10rem] xl:w-[29rem] '></iframe>
                 </div>
                 <div className='hidden md:block ml-5'>
                     <img src={LogoPLM} alt="" className='w-52'/>
                 </div>
                 <div className='mt-3  md:w-[40rem] lg:w-[22rem] xl:ml-10' >
-                    <h1 className='text-sm text-center m-auto w-[18rem]  xl:w-[25rem] '>PAMANTASAN NG LUNGSOD NG MAYNILA UNIVERSITY OF THE CITY OF MANILA</h1>
+                    <h1 className='text-sm text-center m-auto w-[18rem] xl:w-[25rem] md:font-bold '>PAMANTASAN NG LUNGSOD NG MAYNILA UNIVERSITY OF THE CITY OF MANILA</h1>
                     <h1 className='text-sm mt-2 w-[18rem] m-auto text-justify xl:w-[25rem]'>Pamantasan ng Lungsod ng Maynila (PLM) is the first and only charted and autonomous university funded by a city government which is situated inside the historic walled area of Intramuros, Manila, Philippines</h1>
                     <h1 className='text-sm w-[18rem] mt-2 m-auto font-semibold xl:w-[25rem]'>For more information, you may contact the Admission Office.</h1>
                     <h1 className={`${showApply ? "hidden" : "w-[18rem] m-auto text-[0.95rem] mt-2 xl:w-[25rem]"} `} ><span><FontAwesomeIcon icon={faEnvelope} className='mr-2' /></span><span className='font-semibold'>Email:</span> admission_office@plm.edu.ph</h1>
